@@ -99,7 +99,7 @@ header.navbar nav ul li a:hover {color:#f76c5e;}
 
 <section class="hero" id="hero">
   <div class="hero-content">
-    <img src="beach_avatar.jpg" alt="Rajan" class="hero-img">
+    <img src="ra.jpg" alt="Rajan" class="hero-img">
     <div class="hero-text">
       <h1>Hello, I'm Rajan Anagaran</h1>
       <p>IT enthusiast with a love for the beach—coding, networking, and tech projects inspired by sunny vibes and creativity.</p>
@@ -138,9 +138,9 @@ header.navbar nav ul li a:hover {color:#f76c5e;}
 </section>
 
 <script>
-// Smooth scroll
+// Smooth scroll nav
 document.querySelectorAll('header nav a').forEach(link=>{
-  link.addEventListener('click', e=>{
+  link.addEventListener('click',e=>{
     e.preventDefault();
     document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
   });
@@ -159,8 +159,8 @@ window.addEventListener('scroll',()=>{
   navLinks.forEach(link=>{if(link.getAttribute('href').includes(current)) link.classList.add('active');});
 });
 
-// Load JSON
-fetch('rajan_data.json')
+// Load JSON data
+fetch('data.json')
   .then(res=>res.json())
   .then(data=>{
     loadSkills(data.skills);
@@ -194,7 +194,10 @@ function loadProjects(projects){
   projects.forEach(project=>{
     const card=document.createElement('article');
     card.classList.add('project-card');
-    card.innerHTML=`<img src="${project.image}" alt="${project.title}"><h3>${project.title}</h3><p>${project.description}</p>`;
+    card.innerHTML=`
+      <img src="${project.image}" alt="${project.title}">
+      <h3>${project.title}</h3>
+      <p>${project.description}</p>`;
     container.appendChild(card);
   });
 }
@@ -209,6 +212,5 @@ function loadEducation(education){
   });
 }
 </script>
-
 </body>
 </html>
