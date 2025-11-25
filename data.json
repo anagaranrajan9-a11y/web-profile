@@ -1,0 +1,31 @@
+{
+  "skills": [
+    {"name": "HTML & CSS", "level": "90%"},
+    {"name": "JavaScript", "level": "80%"},
+    {"name": "Networking", "level": "75%"},
+    {"name": "Python", "level": "70%"}
+  ],
+  "hobbies": [
+    "Beach Volleyball",
+    "Surfing",
+    "Photography",
+    "Traveling",
+    "Reading Tech Blogs"
+  ],
+  "projects": [
+    {
+      "title": "Beach Resort Website",
+      "description": "Developed a responsive website for a local beach resort using HTML, CSS, and JavaScript.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=400&q=80"
+    },
+    {
+      "title": "IoT Weather Station",
+      "description": "Built an IoT-based weather monitoring station for beach conditions.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=400&q=80"
+    }
+  ],
+  "education": [
+    {"level": "High School", "details": "Completed high school with honors in Science and Technology."},
+    {"level": "Bachelor's Degree", "details": "Pursuing BSc in Information Technology at XYZ University."}
+  ]
+}
